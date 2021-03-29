@@ -1,0 +1,287 @@
+{
+    "hasDirectories": false,
+    "list": [
+        {
+            "key": "create a PV",
+            "inputs": [
+                {
+                    "variable": "device_name",
+                    "name": "Enter the device name: ",
+                    "type": "",
+                    "default": "/dev/sda"
+                }
+            ]
+        },
+        {
+            "key": "list all the PVs",
+            "inputs": []
+        },
+        {
+            "key": "get details of a PV",
+            "inputs": [
+                {
+                    "variable": "pv_name",
+                    "name": "Enter the PV name: ",
+                    "type": "",
+                    "default": "/dev/sda1"
+                }
+            ]
+        },
+        {
+            "key": "remove a PV",
+            "inputs": [
+                {
+                    "variable": "pv_name",
+                    "name": "Enter the PV name: ",
+                    "type": "",
+                    "default": ""
+                }
+            ]
+        },
+        {
+            "key": "create a VG",
+            "inputs": [
+                {
+                    "variable": "pv_name",
+                    "name": "Enter the PV name: ",
+                    "type": "",
+                    "default": ""
+                },
+                {
+                    "variable": "vg_name",
+                    "name": "Enter the VG name: ",
+                    "type": "auto",
+                    "default": ""
+                }
+            ]
+        },
+        {
+            "key": "list all the VGs",
+            "inputs": []
+        },
+        {
+            "key": "get details of a VG",
+            "inputs": [
+                {
+                    "variable": "vg_name",
+                    "name": "Enter the VG name: ",
+                    "type": "",
+                    "default": ""
+                }
+            ]
+        },
+        {
+            "key": "extend a VG",
+            "inputs": [
+                {
+                    "variable": "vg_name",
+                    "name": "Enter the VG name: ",
+                    "type": "",
+                    "default": ""
+                },
+                {
+                    "variable": "pv_name",
+                    "name": "Enter the PV name: ",
+                    "type": "",
+                    "default": ""
+                }
+            ]
+        },
+        {
+            "key": "remove a VG",
+            "inputs": [
+                {
+                    "variable": "vg_name",
+                    "name": "Enter the VG name: ",
+                    "type": "",
+                    "default": ""
+                }
+            ]
+        },
+        {
+            "key": "create a LV",
+            "inputs": [
+                {
+                    "variable": "lv_name",
+                    "name": "Enter the LV name: ",
+                    "type": "",
+                    "default": ""
+                },
+                {
+                    "variable": "vg_name",
+                    "name": "Enter the VG name: ",
+                    "type": "",
+                    "default": ""
+                },
+                {
+                    "variable": "size",
+                    "name": "Enter the size for LV: ",
+                    "type": "",
+                    "default": ""
+                }
+            ]
+        },
+        {
+            "key": "list all the LVs",
+            "inputs": []
+        },
+        {
+            "key": "get details of an LV",
+            "inputs": [
+                {
+                    "variable": "lv_name",
+                    "name": "Enter the LV name: ",
+                    "type": "",
+                    "default": ""
+                },
+                {
+                    "variable": "vg_name",
+                    "name": "Enter the VG name: ",
+                    "type": "",
+                    "default": ""
+                }
+            ]
+        },
+        {
+            "key": "format an LV",
+            "inputs": [
+                {
+                    "variable": "lv_name",
+                    "name": "Enter the LV name: ",
+                    "type": "",
+                    "default": ""
+                },
+                {
+                    "variable": "vg_name",
+                    "name": "Enter the VG name: ",
+                    "type": "",
+                    "default": ""
+                }
+            ]
+        },
+        {
+            "key": "mount an LV",
+            "inputs": [
+                {
+                    "variable": "lv_name",
+                    "name": "Enter the LV name: ",
+                    "type": "",
+                    "default": ""
+                },
+                {
+                    "variable": "vg_name",
+                    "name": "Enter the VG name: ",
+                    "type": "",
+                    "default": ""
+                },
+                {
+                    "variable": "mount_path",
+                    "name": "Enter the path to mount the LV: ",
+                    "type": "",
+                    "default": ""
+                }
+            ]
+        },
+        {
+            "key": "extend an LV",
+            "inputs": [
+                {
+                    "variable": "lv_name",
+                    "name": "Enter the LV name: ",
+                    "type": "",
+                    "default": ""
+                },
+                {
+                    "variable": "vg_name",
+                    "name": "Enter the VG name: ",
+                    "type": "",
+                    "default": ""
+                },
+                {
+                    "variable": "size",
+                    "name": "Enter the size by which LV should extend: ",
+                    "type": "",
+                    "default": ""
+                }
+            ]
+        },
+        {
+            "key": "reduce an LV",
+            "inputs": [
+                {
+                    "variable": "lv_name",
+                    "name": "Enter the LV name: ",
+                    "type": "",
+                    "default": ""
+                },
+                {
+                    "variable": "vg_name",
+                    "name": "Enter the VG name: ",
+                    "type": "",
+                    "default": ""
+                },
+                {
+                    "variable": "size",
+                    "name": "Enter the new size: ",
+                    "type": "",
+                    "default": ""
+                },
+                {
+                    "variable": "mount_path",
+                    "name": "Enter the new mount point: ",
+                    "type": "",
+                    "default": ""
+                }
+            ]
+        },
+        {
+            "key": "unmount an LV",
+            "inputs": [
+                {
+                    "variable": "lv_name",
+                    "name": "Enter the LV name: ",
+                    "type": "",
+                    "default": ""
+                },
+                {
+                    "variable": "vg_name",
+                    "name": "Enter the VG name: ",
+                    "type": "",
+                    "default": ""
+                }
+            ]
+        },
+        {
+            "key": "remove an LV",
+            "inputs": [
+                {
+                    "variable": "lv_name",
+                    "name": "Enter the LV name: ",
+                    "type": "",
+                    "default": ""
+                },
+                {
+                    "variable": "vg_name",
+                    "name": "Enter the VG name: ",
+                    "type": "",
+                    "default": ""
+                }
+            ]
+        },
+        {
+            "key": "display the disk space",
+            "inputs": []
+        },
+        {
+            "key": "create a directory",
+            "inputs": [
+                {
+                    "variable": "dir_path",
+                    "name": "Enter the path to directory: ",
+                    "type": "",
+                    "default": ""
+                }
+            ]
+        }
+    ]
+}

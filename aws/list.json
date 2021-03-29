@@ -1,0 +1,13 @@
+{
+    "hasDirectories": true,
+    "list": [
+        {
+            "key": "EC2",
+            "directory": "ec2"
+        },
+        {
+            "key": "S3",
+            "directory": "s3"
+        }
+    ]
+}

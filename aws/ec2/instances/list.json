@@ -1,0 +1,82 @@
+{
+    "hasDirectories": false,
+    "list": [
+        {
+            "key": "launch Instances",
+            "inputs": [
+                {
+                    "variable": "",
+                    "name": "",
+                    "type": "",
+                    "default": ""
+                }
+            ]
+        },
+        {
+            "key": "list Instances",
+            "inputs": [
+                {
+                    "variable": "",
+                    "name": "",
+                    "type": "",
+                    "default": ""
+                }
+            ]
+        },
+        {
+            "key": "stop Instances",
+            "inputs": [
+                {
+                    "variable": "",
+                    "name": "",
+                    "type": "",
+                    "default": ""
+                }
+            ]
+        },
+        {
+            "key": "start Instances",
+            "inputs": [
+                {
+                    "variable": "",
+                    "name": "",
+                    "type": "",
+                    "default": ""
+                }
+            ]
+        },
+        {
+            "key": "terminate Instance",
+            "inputs": [
+                {
+                    "variable": "",
+                    "name": "",
+                    "type": "",
+                    "default": ""
+                }
+            ]
+        },
+        {
+            "key": "get instance details",
+            "inputs": [
+                {
+                    "variable": "",
+                    "name": "",
+                    "type": "",
+                    "default": ""
+                }
+            ]
+        },
+        {
+            "key": "return to previous menu",
+            "inputs": [
+                {
+                    "variable": "",
+                    "name": "",
+                    "type": "",
+                    "default": ""
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "hasDirectories": true,
+    "list": [
+        {
+            "key": "Instances",
+            "directory": "instances"
+        },
+        {
+            "key": "EBS",
+            "directory": "ebs"
+        },
+        {
+            "key": "KeyPairs",
+            "directory": "keypairs"
+        }
+    ]
+}

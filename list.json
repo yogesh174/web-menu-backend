@@ -1,0 +1,13 @@
+{
+    "hasDirectories": true,
+    "list": [
+        {
+            "key": "navigate to AWS",
+            "directory": "aws"
+        },
+        {
+            "key": "navigate to LVM",
+            "directory": "lvm"
+        }
+    ]
+}
