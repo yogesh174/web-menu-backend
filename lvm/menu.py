@@ -2,7 +2,6 @@
 
 import subprocess as sp
 import json, sys
-
 import cgi
 import os
 
@@ -12,27 +11,6 @@ print()
 
 
 from commands import *
-
-main_menu = ["create a PV", "list all the PVs", 
-            "get details of a PV",
-            "remove a PV",
-            "create a VG",
-            "list all the VGs", "get details of a VG",
-            "extend a VG", 
-            "remove a VG",
-            "create a LV",
-            "list all the LVs", 
-            "get details of an LV",
-            "format an LV",
-            "mount an LV",
-            "extend an LV",
-            "reduce an LV",
-            "unmount an LV",
-            "remove an LV",
-            "display the disk space",
-            "create a directory",
-            "quit"
-            ]
 
 form = json.load(sys.stdin)
 option = form.get("option")

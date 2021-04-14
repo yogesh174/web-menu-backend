@@ -1,0 +1,145 @@
+{
+    "hasDirectories": false,
+    "groups": [
+        "All"
+    ],
+    "list": [
+        {
+            "key": "create volume",
+            "group": "All",
+            "inputs": [
+                {
+                    "variable": "az",
+                    "name": "Enter Subnet ID: ",
+                    "type": "",
+                    "default": ""
+                },
+                {
+                    "variable": "size",
+                    "name": "Enter size: ",
+                    "type": "",
+                    "default": 1
+                },
+                {
+                    "variable": "vt",
+                    "name": "Enter Volume type: ",
+                    "type": "",
+                    "default": "gp2"
+                },
+                {
+                    "variable": "name",
+                    "name": "Enter name of volume: ",
+                    "type": "",
+                    "default": ""
+                }
+            ]
+        },
+        {
+            "key": "create and attach volume",
+            "group": "All",
+            "inputs": [
+                {
+                    "variable": "az",
+                    "name": "Enter Subnet ID: ",
+                    "type": "",
+                    "default": ""
+                },
+                {
+                    "variable": "size",
+                    "name": "Enter size: ",
+                    "type": "",
+                    "default": 1
+                },
+                {
+                    "variable": "vt",
+                    "name": "Enter Volume type: ",
+                    "type": "",
+                    "default": "gp2"
+                },
+                {
+                    "variable": "name",
+                    "name": "Enter name of volume: ",
+                    "type": "",
+                    "default": ""
+                },
+                {
+                    "variable": "device_name",
+                    "name": "Enter the device name: ",
+                    "type": "",
+                    "default": "/dev/sdf"
+                },
+                {
+                    "variable": "instance_id",
+                    "name": "Enter Instance ID: ",
+                    "type": "",
+                    "default": ""
+                }
+            ]
+        },
+        {
+            "key": "attach volume",
+            "group": "All",
+            "inputs": [
+                {
+                    "variable": "vol_id",
+                    "name": "Enter the Volume ID: ",
+                    "type": "",
+                    "default": ""
+                },
+                {
+                    "variable": "device_name",
+                    "name": "Enter the device name: ",
+                    "type": "",
+                    "default": "/dev/sdf"
+                },
+                {
+                    "variable": "instance_id",
+                    "name": "Enter Instance ID: ",
+                    "type": "",
+                    "default": ""
+                }
+            ]
+        },
+        {
+            "key": "detach volume",
+            "group": "All",
+            "inputs": [
+                {
+                    "variable": "vol_id",
+                    "name": "Enter the Volume ID: ",
+                    "type": "",
+                    "default": ""
+                }
+            ]
+        },
+        {
+            "key": "list volumes",
+            "group": "All",
+            "inputs": []
+        },
+        {
+            "key": "delete volume",
+            "group": "All",
+            "inputs": [
+                {
+                    "variable": "vol_id",
+                    "name": "Enter the Volume ID: ",
+                    "type": "",
+                    "default": ""
+                }
+            ]
+        },
+        {
+            "key": "get volume details",
+            "group": "All",
+            "inputs": [
+                {
+                    "variable": "vol_id",
+                    "name": "Enter the Volume ID: ",
+                    "type": "",
+                    "default": ""
+                }
+            ]
+        }
+    ]
+}

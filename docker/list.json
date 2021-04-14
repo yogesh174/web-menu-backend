@@ -1,0 +1,249 @@
+{
+    "hasDirectories": false,
+    "groups": [
+        "All",
+        "Containers I",
+        "Containers II",
+        "Images",
+        "Misc."
+    ],
+    "list": [
+        {
+            "key": "launch a docker container",
+            "group": "Containers I",
+            "inputs": [
+                {
+                    "variable": "image",
+                    "name": "Enter Image name and version: ",
+                    "type": "",
+                    "default": "centos"
+                },
+                {
+                    "variable": "name",
+                    "name": "Enter name of the container: ",
+                    "type": "",
+                    "default": ""
+                }
+            ]
+        },
+        {
+            "key": "list docker containers",
+            "group": "Containers I",
+            "inputs": []
+        },
+        {
+            "key": "remove one container",
+            "group": "Containers I",
+            "inputs": [
+                {
+                    "variable": "name",
+                    "name": "Enter name of the container: ",
+                    "type": "",
+                    "default": ""
+                }
+            ]
+        },
+        {
+            "key": "remove one container focefully",
+            "group": "Containers I",
+            "inputs": [
+                {
+                    "variable": "name",
+                    "name": "Enter name of the container: ",
+                    "type": "",
+                    "default": ""
+                }
+            ]
+        },
+        {
+            "key": "remove all stopped containers",
+            "group": "Containers I",
+            "inputs": []
+        },
+        {
+            "key": "remove all containers",
+            "group": "Containers I",
+            "inputs": []
+        },
+        {
+            "key": "stop a container",
+            "group": "Containers II",
+            "inputs": [
+                {
+                    "variable": "name",
+                    "name": "Enter name of the container: ",
+                    "type": "",
+                    "default": ""
+                }
+            ]
+        },
+        {
+            "key": "start a container",
+            "group": "Containers II",
+            "inputs": [
+                {
+                    "variable": "name",
+                    "name": "Enter name of the container: ",
+                    "type": "",
+                    "default": ""
+                }
+            ]
+        },
+        {
+            "key": "copy file to container",
+            "group": "Containers II",
+            "inputs": [
+                {
+                    "variable": "name",
+                    "name": "Enter name of the container: ",
+                    "type": "",
+                    "default": ""
+                },
+                {
+                    "variable": "src",
+                    "name": "Enter path of source file: ",
+                    "type": "",
+                    "default": ""
+                },
+                {
+                    "variable": "dest",
+                    "name": "Enter path of destination file: ",
+                    "type": "",
+                    "default": ""
+                }
+            ]
+        },
+        {
+            "key": "copy file from container",
+            "group": "Containers II",
+            "inputs": [
+                {
+                    "variable": "name",
+                    "name": "Enter name of the container: ",
+                    "type": "",
+                    "default": ""
+                },
+                {
+                    "variable": "src",
+                    "name": "Enter path of source file: ",
+                    "type": "",
+                    "default": ""
+                },
+                {
+                    "variable": "dest",
+                    "name": "Enter path of destination file: ",
+                    "type": "",
+                    "default": ""
+                }
+            ]
+        },
+        {
+            "key": "run a command on specific container",
+            "group": "Containers II",
+            "inputs": [
+                {
+                    "variable": "name",
+                    "name": "Enter name of the container: ",
+                    "type": "",
+                    "default": ""
+                },
+                {
+                    "variable": "cmd",
+                    "name": "Enter a command: ",
+                    "type": "",
+                    "default": ""
+                }
+            ]
+        },
+        {
+            "key": "pull an image",
+            "group": "Images",
+            "inputs": [
+                {
+                    "variable": "name",
+                    "name": "Enter name and tag of the image: ",
+                    "type": "",
+                    "default": ""
+                }
+            ]
+        },
+        {
+            "key": "list images",
+            "group": "Images",
+            "inputs": []
+        },
+        {
+            "key": "remove image",
+            "group": "Images",
+            "inputs": [
+                {
+                    "variable": "name",
+                    "name": "Enter name of the image: ",
+                    "type": "",
+                    "default": ""
+                }
+            ]
+        },
+        {
+            "key": "search for images on dockerhub",
+            "group": "Images",
+            "inputs": [
+                {
+                    "variable": "name",
+                    "name": "Enter search word: ",
+                    "type": "",
+                    "default": ""
+                }
+            ]
+        },
+        {
+            "key": "check logs on a container",
+            "group": "Containers II",
+            "inputs": [
+                {
+                    "variable": "name",
+                    "name": "Enter contianer name/id: ",
+                    "type": "",
+                    "default": ""
+                }
+            ]
+        },
+        {
+            "key": "know docker version",
+            "group": "Misc.",
+            "inputs": []
+        },
+        {
+            "key": "know docker info",
+            "group": "Misc.",
+            "inputs": []
+        },
+        {
+            "key": "custom linux command",
+            "group": "Misc.",
+            "inputs": [
+                {
+                    "variable": "cmd",
+                    "name": "Enter custom command: ",
+                    "type": "",
+                    "default": ""
+                }
+            ]
+        },
+        {
+            "key": "start docker daemon",
+            "group": "Misc.",
+            "inputs": []
+        },
+        {
+            "key": "stop docker daemon",
+            "group": "Misc.",
+            "inputs": []
+        },
+        {
+            "key": "know status of docker daemon",
+            "group": "Misc.",
+            "inputs": []
+        }
+    ]
+}

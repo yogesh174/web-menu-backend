@@ -1,34 +1,69 @@
 {
     "hasDirectories": false,
+    "groups": [
+        "All"
+    ],
     "list": [
         {
             "key": "launch Instances",
+            "group": "All",
             "inputs": [
                 {
-                    "variable": "",
-                    "name": "",
+                    "variable": "subnet",
+                    "name": "Enter Subnet ID: ",
                     "type": "",
                     "default": ""
+                },
+                {
+                    "variable": "name",
+                    "name": "Enter Name: ",
+                    "type": "",
+                    "default": "auto"
+                },
+                {
+                    "variable": "ami",
+                    "name": "Enter AMI ID: ",
+                    "type": "",
+                    "default": "ami-098f16afa9edf40be"
+                },
+                {
+                    "variable": "instance_type",
+                    "name": "Enter Instance Type: ",
+                    "type": "",
+                    "default": "t2.micro"
+                },
+                {
+                    "variable": "keypair",
+                    "name": "Enter key pair name: ",
+                    "type": "",
+                    "default": "None"
+                },
+                {
+                    "variable": "sg_id",
+                    "name": "Enter Security Group ID: ",
+                    "type": "",
+                    "default": ""
+                },
+                {
+                    "variable": "count",
+                    "name": "Enter the number of instances: ",
+                    "type": "",
+                    "default": 1
                 }
             ]
         },
         {
             "key": "list Instances",
-            "inputs": [
-                {
-                    "variable": "",
-                    "name": "",
-                    "type": "",
-                    "default": ""
-                }
-            ]
+            "group": "All",
+            "inputs": []
         },
         {
             "key": "stop Instances",
+            "group": "All",
             "inputs": [
                 {
-                    "variable": "",
-                    "name": "",
+                    "variable": "instance_id",
+                    "name": "Enter the instance id: ",
                     "type": "",
                     "default": ""
                 }
@@ -36,10 +71,11 @@
         },
         {
             "key": "start Instances",
+            "group": "All",
             "inputs": [
                 {
-                    "variable": "",
-                    "name": "",
+                    "variable": "instance_id",
+                    "name": "Enter the instance id: ",
                     "type": "",
                     "default": ""
                 }
@@ -47,10 +83,11 @@
         },
         {
             "key": "terminate Instance",
+            "group": "All",
             "inputs": [
                 {
-                    "variable": "",
-                    "name": "",
+                    "variable": "instance_id",
+                    "name": "Enter the instance id: ",
                     "type": "",
                     "default": ""
                 }
@@ -58,21 +95,11 @@
         },
         {
             "key": "get instance details",
+            "group": "All",
             "inputs": [
                 {
-                    "variable": "",
-                    "name": "",
-                    "type": "",
-                    "default": ""
-                }
-            ]
-        },
-        {
-            "key": "return to previous menu",
-            "inputs": [
-                {
-                    "variable": "",
-                    "name": "",
+                    "variable": "instance_id",
+                    "name": "Enter the instance id: ",
                     "type": "",
                     "default": ""
                 }

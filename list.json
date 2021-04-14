@@ -2,12 +2,29 @@
     "hasDirectories": true,
     "list": [
         {
-            "key": "navigate to AWS",
-            "directory": "aws"
+            "key": "AWS",
+            "directory": "aws",
+            "description": "AWS menu assists you to orchestrate all your AWS services and resources"
         },
         {
-            "key": "navigate to LVM",
-            "directory": "lvm"
+            "key": "Docker",
+            "directory": "docker",
+            "description": "Docker menu primarily aids you in manging and maintaining your docker containers and images"
+        },
+        {
+            "key": "Hadoop",
+            "directory": "hadoop",
+            "description": "Hadoop menu allows you to manage the entire HDFS cluster from provisioning to monitoring"
+        },
+        {
+            "key": "LVM",
+            "directory": "lvm",
+            "description": "LVM menu lets you configure and manage your disk space flexibly"
+        },
+        {
+            "key": "Linux",
+            "directory": "linux",
+            "description": "Linux menu provides some of the most commonly performed operations at your finger tips"
         }
     ]
 }

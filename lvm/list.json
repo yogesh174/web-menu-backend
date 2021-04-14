@@ -1,8 +1,16 @@
 {
     "hasDirectories": false,
+    "groups": [
+        "All",
+        "Physical Volumes",
+        "Volume Groups",
+        "Logical Volumes",
+        "Misc."
+    ],
     "list": [
         {
             "key": "create a PV",
+            "group": "Physical Volumes",
             "inputs": [
                 {
                     "variable": "device_name",
@@ -14,10 +22,12 @@
         },
         {
             "key": "list all the PVs",
+            "group": "Physical Volumes",
             "inputs": []
         },
         {
             "key": "get details of a PV",
+            "group": "Physical Volumes",
             "inputs": [
                 {
                     "variable": "pv_name",
@@ -29,6 +39,7 @@
         },
         {
             "key": "remove a PV",
+            "group": "Physical Volumes",
             "inputs": [
                 {
                     "variable": "pv_name",
@@ -40,6 +51,7 @@
         },
         {
             "key": "create a VG",
+            "group": "Volume Groups",
             "inputs": [
                 {
                     "variable": "pv_name",
@@ -57,10 +69,12 @@
         },
         {
             "key": "list all the VGs",
+            "group": "Volume Groups",
             "inputs": []
         },
         {
             "key": "get details of a VG",
+            "group": "Volume Groups",
             "inputs": [
                 {
                     "variable": "vg_name",
@@ -72,6 +86,7 @@
         },
         {
             "key": "extend a VG",
+            "group": "Volume Groups",
             "inputs": [
                 {
                     "variable": "vg_name",
@@ -89,6 +104,7 @@
         },
         {
             "key": "remove a VG",
+            "group": "Volume Groups",
             "inputs": [
                 {
                     "variable": "vg_name",
@@ -100,6 +116,7 @@
         },
         {
             "key": "create a LV",
+            "group": "Logical Volumes",
             "inputs": [
                 {
                     "variable": "lv_name",
@@ -123,10 +140,12 @@
         },
         {
             "key": "list all the LVs",
+            "group": "Logical Volumes",
             "inputs": []
         },
         {
             "key": "get details of an LV",
+            "group": "Logical Volumes",
             "inputs": [
                 {
                     "variable": "lv_name",
@@ -144,6 +163,7 @@
         },
         {
             "key": "format an LV",
+            "group": "Logical Volumes",
             "inputs": [
                 {
                     "variable": "lv_name",
@@ -161,6 +181,7 @@
         },
         {
             "key": "mount an LV",
+            "group": "Logical Volumes",
             "inputs": [
                 {
                     "variable": "lv_name",
@@ -184,6 +205,7 @@
         },
         {
             "key": "extend an LV",
+            "group": "Logical Volumes",
             "inputs": [
                 {
                     "variable": "lv_name",
@@ -207,6 +229,7 @@
         },
         {
             "key": "reduce an LV",
+            "group": "Logical Volumes",
             "inputs": [
                 {
                     "variable": "lv_name",
@@ -236,6 +259,7 @@
         },
         {
             "key": "unmount an LV",
+            "group": "Logical Volumes",
             "inputs": [
                 {
                     "variable": "lv_name",
@@ -253,6 +277,7 @@
         },
         {
             "key": "remove an LV",
+            "group": "Logical Volumes",
             "inputs": [
                 {
                     "variable": "lv_name",
@@ -270,10 +295,12 @@
         },
         {
             "key": "display the disk space",
+            "group": "Misc.",
             "inputs": []
         },
         {
             "key": "create a directory",
+            "group": "Misc.",
             "inputs": [
                 {
                     "variable": "dir_path",

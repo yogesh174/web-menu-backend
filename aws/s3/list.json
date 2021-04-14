@@ -1,0 +1,110 @@
+{
+    "hasDirectories": false,
+    "list": [
+        {
+            "key": "create a bucket",
+            "inputs": [
+                {
+                    "variable": "bucket_name",
+                    "name": "Enter the name of bucket: ",
+                    "type": "",
+                    "default": ""
+                },
+                {
+                    "variable": "region",
+                    "name": "Enter the region of bucket: ",
+                    "type": "",
+                    "default": "us-east-1"
+                }
+            ]
+        },
+        {
+            "key": "delete bucket",
+            "inputs": [
+                {
+                    "variable": "bucket_name",
+                    "name": "Enter the name of bucket: ",
+                    "type": "",
+                    "default": ""
+                }
+            ]
+        },
+        {
+            "key": "list buckets",
+            "inputs": []
+        },
+        {
+            "key": "upload files to bucket",
+            "inputs": [
+                {
+                    "variable": "path",
+                    "name": "Enter the path to file: ",
+                    "type": "",
+                    "default": ""
+                },
+                {
+                    "variable": "bucket_name",
+                    "name": "Enter the name of bucket: ",
+                    "type": "",
+                    "default": ""
+                },
+                {
+                    "variable": "obj_name",
+                    "name": "Enter the name of object: ",
+                    "type": "",
+                    "default": ""
+                },
+                {
+                    "variable": "public",
+                    "name": "Make object public[y/n]: ",
+                    "type": "",
+                    "default": "n"
+                }
+            ]
+        },
+        {
+            "key": "download files from bucket",
+            "inputs": [
+                {
+                    "variable": "bucket_name",
+                    "name": "Enter the name of bucket: ",
+                    "type": "",
+                    "default": ""
+                },
+                {
+                    "variable": "obj_name",
+                    "name": "Enter the name of object: ",
+                    "type": "",
+                    "default": ""
+                },
+                {
+                    "variable": "path",
+                    "name": "Enter the path to file: ",
+                    "type": "",
+                    "default": "."
+                }
+            ]
+        },
+        {
+            "key": "list files in bucket",
+            "inputs": []
+        },
+        {
+            "key": "delete file in bucket",
+            "inputs": [
+                {
+                    "variable": "bucket_name",
+                    "name": "Enter the name of bucket: ",
+                    "type": "",
+                    "default": ""
+                },
+                {
+                    "variable": "obj_name",
+                    "name": "Enter the name of object: ",
+                    "type": "",
+                    "default": ""
+                }
+            ]
+        }
+    ]
+}

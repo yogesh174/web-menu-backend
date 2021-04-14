@@ -1,0 +1,125 @@
+{
+    "hasDirectories": false,
+    "groups": [
+        "All",
+        "Common Commands",
+        "Sys Info",
+        "Misc."
+    ],
+    "list": [
+        {
+            "key": "create a directory",
+            "group": "Common Commands",
+            "inputs": [
+                {
+                    "variable": "name",
+                    "name": "Enter the directory name:",
+                    "type": "",
+                    "default": ""
+                }
+            ]
+        },
+        {
+            "key": "display working directory",
+            "group": "Common Commands",
+            "inputs": []
+        },
+        {
+            "key": "display ip address",
+            "group": "Sys Info",
+            "inputs": []
+        },
+        {
+            "key": "display date",
+            "group": "Common Commands",
+            "inputs": []
+        },
+        {
+            "key": "display calender",
+            "group": "Common Commands",
+            "inputs": []
+        },
+        {
+            "key": "create alias",
+            "group": "Common Commands",
+            "inputs": [
+                {
+                    "variable": "name",
+                    "name": "Enter the alias name:",
+                    "type": "",
+                    "default": ""
+                },
+                {
+                    "variable": "cmd",
+                    "name": "Enter the cmd:",
+                    "type": "",
+                    "default": ""
+                }
+            ]
+        },
+        {
+            "key": "install pkg",
+            "group": "Common Commands",
+            "inputs": [
+                {
+                    "variable": "name",
+                    "name": "Enter the pkg name:",
+                    "type": "",
+                    "default": ""
+                }
+            ]
+        },
+        {
+            "key": "ping an address",
+            "group": "Common Commands",
+            "inputs": [
+                {
+                    "variable": "addr",
+                    "name": "Enter the DNS/IP:",
+                    "type": "",
+                    "default": ""
+                }
+            ]
+        },
+        {
+            "key": "display the info of current user",
+            "group": "Sys Info",
+            "inputs": []
+        },
+        {
+            "key": "display cpu details",
+            "group": "Sys Info",
+            "inputs": []
+        },
+        {
+            "key": "shutdown",
+            "group": "Misc.",
+            "inputs": []
+        },
+        {
+            "key": "reboot",
+            "group": "Misc.",
+            "inputs": []
+        },
+        {
+            "key": "display current memory usage",
+            "group": "Sys Info",
+            "inputs": []
+        },
+        {
+            "key": "display running process",
+            "group": "Sys Info",
+            "inputs": []
+        },
+        {
+            "key": "display open ports",
+            "group": "Sys Info",
+            "inputs": []
+        },
+        {
+            "key": "display disk usage",
+            "group": "Sys Info",
+            "inputs": []
+        }
+    ]
+}

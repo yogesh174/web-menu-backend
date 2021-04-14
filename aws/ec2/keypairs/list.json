@@ -1,0 +1,44 @@
+{
+    "hasDirectories": false,
+    "groups": [
+        "All"
+    ],
+    "list": [
+        {
+            "key": "create a keypair",
+            "group": "All",
+            "inputs": [
+                {
+                    "variable": "keypair_name",
+                    "name": "Enter the name of Keypair :",
+                    "type": "",
+                    "default": ""
+                }
+            ]
+        },
+        {
+            "key": "delete a keypair",
+            "group": "All",
+            "inputs": [
+                {
+                    "variable": "keypair_name",
+                    "name": "Enter the name of Keypair :",
+                    "type": "",
+                    "default": ""
+                }
+            ]
+        },
+        {
+            "key": "list keypairs",
+            "group": "All",
+            "inputs": [
+                {
+                    "variable": "",
+                    "name": "",
+                    "type": "",
+                    "default": ""
+                }
+            ]
+        }
+    ]
+}
