@@ -13,7 +13,7 @@
             "inputs": [
                 {
                     "variable": "name",
-                    "name": "Enter the directory name:",
+                    "name": "Directory name:",
                     "type": "",
                     "default": ""
                 }
@@ -45,13 +45,13 @@
             "inputs": [
                 {
                     "variable": "name",
-                    "name": "Enter the alias name:",
+                    "name": "Alias name",
                     "type": "",
                     "default": ""
                 },
                 {
                     "variable": "cmd",
-                    "name": "Enter the cmd:",
+                    "name": "Command",
                     "type": "",
                     "default": ""
                 }
@@ -63,7 +63,7 @@
             "inputs": [
                 {
                     "variable": "name",
-                    "name": "Enter the pkg name:",
+                    "name": "Package name",
                     "type": "",
                     "default": ""
                 }
@@ -75,7 +75,7 @@
             "inputs": [
                 {
                     "variable": "addr",
-                    "name": "Enter the DNS/IP:",
+                    "name": "IP address",
                     "type": "",
                     "default": ""
                 }

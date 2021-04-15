@@ -14,13 +14,13 @@
             "inputs": [
                 {
                     "variable": "image",
-                    "name": "Enter Image name and version: ",
+                    "name": "Image name and tag",
                     "type": "",
                     "default": "centos"
                 },
                 {
                     "variable": "name",
-                    "name": "Enter name of the container: ",
+                    "name": "Container name",
                     "type": "",
                     "default": ""
                 }
@@ -37,7 +37,7 @@
             "inputs": [
                 {
                     "variable": "name",
-                    "name": "Enter name of the container: ",
+                    "name": "Container name",
                     "type": "",
                     "default": ""
                 }
@@ -49,7 +49,7 @@
             "inputs": [
                 {
                     "variable": "name",
-                    "name": "Enter name of the container: ",
+                    "name": "Container name",
                     "type": "",
                     "default": ""
                 }
@@ -71,7 +71,7 @@
             "inputs": [
                 {
                     "variable": "name",
-                    "name": "Enter name of the container: ",
+                    "name": "Container name",
                     "type": "",
                     "default": ""
                 }
@@ -83,7 +83,7 @@
             "inputs": [
                 {
                     "variable": "name",
-                    "name": "Enter name of the container: ",
+                    "name": "Container name",
                     "type": "",
                     "default": ""
                 }
@@ -95,19 +95,19 @@
             "inputs": [
                 {
                     "variable": "name",
-                    "name": "Enter name of the container: ",
+                    "name": "Container name",
                     "type": "",
                     "default": ""
                 },
                 {
                     "variable": "src",
-                    "name": "Enter path of source file: ",
+                    "name": "Source file path",
                     "type": "",
                     "default": ""
                 },
                 {
                     "variable": "dest",
-                    "name": "Enter path of destination file: ",
+                    "name": "Destination file path",
                     "type": "",
                     "default": ""
                 }
@@ -119,19 +119,19 @@
             "inputs": [
                 {
                     "variable": "name",
-                    "name": "Enter name of the container: ",
+                    "name": "Container name",
                     "type": "",
                     "default": ""
                 },
                 {
                     "variable": "src",
-                    "name": "Enter path of source file: ",
+                    "name": "Source file path",
                     "type": "",
                     "default": ""
                 },
                 {
                     "variable": "dest",
-                    "name": "Enter path of destination file: ",
+                    "name": "Destination file path",
                     "type": "",
                     "default": ""
                 }
@@ -143,13 +143,13 @@
             "inputs": [
                 {
                     "variable": "name",
-                    "name": "Enter name of the container: ",
+                    "name": "Container name",
                     "type": "",
                     "default": ""
                 },
                 {
                     "variable": "cmd",
-                    "name": "Enter a command: ",
+                    "name": "Command",
                     "type": "",
                     "default": ""
                 }
@@ -161,7 +161,7 @@
             "inputs": [
                 {
                     "variable": "name",
-                    "name": "Enter name and tag of the image: ",
+                    "name": "Image name and tag",
                     "type": "",
                     "default": ""
                 }
@@ -178,7 +178,7 @@
             "inputs": [
                 {
                     "variable": "name",
-                    "name": "Enter name of the image: ",
+                    "name": "Image name",
                     "type": "",
                     "default": ""
                 }
@@ -190,7 +190,7 @@
             "inputs": [
                 {
                     "variable": "name",
-                    "name": "Enter search word: ",
+                    "name": "Search word",
                     "type": "",
                     "default": ""
                 }
@@ -202,7 +202,7 @@
             "inputs": [
                 {
                     "variable": "name",
-                    "name": "Enter contianer name/id: ",
+                    "name": "Contianer Name",
                     "type": "",
                     "default": ""
                 }
@@ -224,7 +224,7 @@
             "inputs": [
                 {
                     "variable": "cmd",
-                    "name": "Enter custom command: ",
+                    "name": "Custom command",
                     "type": "",
                     "default": ""
                 }

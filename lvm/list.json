@@ -14,14 +14,14 @@
             "inputs": [
                 {
                     "variable": "device_name",
-                    "name": "Enter the device name: ",
+                    "name": "device name",
                     "type": "",
                     "default": "/dev/sda"
                 }
             ]
         },
         {
-            "key": "list all the PVs",
+            "key": "list PVs",
             "group": "Physical Volumes",
             "inputs": []
         },
@@ -31,7 +31,7 @@
             "inputs": [
                 {
                     "variable": "pv_name",
-                    "name": "Enter the PV name: ",
+                    "name": "PV name",
                     "type": "",
                     "default": "/dev/sda1"
                 }
@@ -43,7 +43,7 @@
             "inputs": [
                 {
                     "variable": "pv_name",
-                    "name": "Enter the PV name: ",
+                    "name": "PV name",
                     "type": "",
                     "default": ""
                 }
@@ -55,13 +55,13 @@
             "inputs": [
                 {
                     "variable": "pv_name",
-                    "name": "Enter the PV name: ",
+                    "name": "PV name",
                     "type": "",
                     "default": ""
                 },
                 {
                     "variable": "vg_name",
-                    "name": "Enter the VG name: ",
+                    "name": "VG name",
                     "type": "auto",
                     "default": ""
                 }
@@ -78,7 +78,7 @@
             "inputs": [
                 {
                     "variable": "vg_name",
-                    "name": "Enter the VG name: ",
+                    "name": "VG name",
                     "type": "",
                     "default": ""
                 }
@@ -90,13 +90,13 @@
             "inputs": [
                 {
                     "variable": "vg_name",
-                    "name": "Enter the VG name: ",
+                    "name": "VG name",
                     "type": "",
                     "default": ""
                 },
                 {
                     "variable": "pv_name",
-                    "name": "Enter the PV name: ",
+                    "name": "PV name",
                     "type": "",
                     "default": ""
                 }
@@ -108,7 +108,7 @@
             "inputs": [
                 {
                     "variable": "vg_name",
-                    "name": "Enter the VG name: ",
+                    "name": "VG name",
                     "type": "",
                     "default": ""
                 }
@@ -120,19 +120,19 @@
             "inputs": [
                 {
                     "variable": "lv_name",
-                    "name": "Enter the LV name: ",
+                    "name": "LV name",
                     "type": "",
                     "default": ""
                 },
                 {
                     "variable": "vg_name",
-                    "name": "Enter the VG name: ",
+                    "name": "VG name",
                     "type": "",
                     "default": ""
                 },
                 {
                     "variable": "size",
-                    "name": "Enter the size for LV: ",
+                    "name": "Size of LV",
                     "type": "",
                     "default": ""
                 }
@@ -149,13 +149,13 @@
             "inputs": [
                 {
                     "variable": "lv_name",
-                    "name": "Enter the LV name: ",
+                    "name": "LV name",
                     "type": "",
                     "default": ""
                 },
                 {
                     "variable": "vg_name",
-                    "name": "Enter the VG name: ",
+                    "name": "VG name",
                     "type": "",
                     "default": ""
                 }
@@ -167,13 +167,13 @@
             "inputs": [
                 {
                     "variable": "lv_name",
-                    "name": "Enter the LV name: ",
+                    "name": "LV name",
                     "type": "",
                     "default": ""
                 },
                 {
                     "variable": "vg_name",
-                    "name": "Enter the VG name: ",
+                    "name": "VG name",
                     "type": "",
                     "default": ""
                 }
@@ -185,19 +185,19 @@
             "inputs": [
                 {
                     "variable": "lv_name",
-                    "name": "Enter the LV name: ",
+                    "name": "LV name",
                     "type": "",
                     "default": ""
                 },
                 {
                     "variable": "vg_name",
-                    "name": "Enter the VG name: ",
+                    "name": "VG name",
                     "type": "",
                     "default": ""
                 },
                 {
                     "variable": "mount_path",
-                    "name": "Enter the path to mount the LV: ",
+                    "name": "Path to mount LV",
                     "type": "",
                     "default": ""
                 }
@@ -209,19 +209,19 @@
             "inputs": [
                 {
                     "variable": "lv_name",
-                    "name": "Enter the LV name: ",
+                    "name": "LV name",
                     "type": "",
                     "default": ""
                 },
                 {
                     "variable": "vg_name",
-                    "name": "Enter the VG name: ",
+                    "name": "VG name",
                     "type": "",
                     "default": ""
                 },
                 {
                     "variable": "size",
-                    "name": "Enter the size by which LV should extend: ",
+                    "name": "Extension size",
                     "type": "",
                     "default": ""
                 }
@@ -233,25 +233,25 @@
             "inputs": [
                 {
                     "variable": "lv_name",
-                    "name": "Enter the LV name: ",
+                    "name": "LV name",
                     "type": "",
                     "default": ""
                 },
                 {
                     "variable": "vg_name",
-                    "name": "Enter the VG name: ",
+                    "name": "VG name",
                     "type": "",
                     "default": ""
                 },
                 {
                     "variable": "size",
-                    "name": "Enter the new size: ",
+                    "name": "New size",
                     "type": "",
                     "default": ""
                 },
                 {
                     "variable": "mount_path",
-                    "name": "Enter the new mount point: ",
+                    "name": "New mount point",
                     "type": "",
                     "default": ""
                 }
@@ -263,13 +263,13 @@
             "inputs": [
                 {
                     "variable": "lv_name",
-                    "name": "Enter the LV name: ",
+                    "name": "LV name",
                     "type": "",
                     "default": ""
                 },
                 {
                     "variable": "vg_name",
-                    "name": "Enter the VG name: ",
+                    "name": "VG name",
                     "type": "",
                     "default": ""
                 }
@@ -281,13 +281,13 @@
             "inputs": [
                 {
                     "variable": "lv_name",
-                    "name": "Enter the LV name: ",
+                    "name": "LV name",
                     "type": "",
                     "default": ""
                 },
                 {
                     "variable": "vg_name",
-                    "name": "Enter the VG name: ",
+                    "name": "VG name",
                     "type": "",
                     "default": ""
                 }
@@ -304,7 +304,7 @@
             "inputs": [
                 {
                     "variable": "dir_path",
-                    "name": "Enter the path to directory: ",
+                    "name": "path to directory",
                     "type": "",
                     "default": ""
                 }

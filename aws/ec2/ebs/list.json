@@ -10,25 +10,25 @@
             "inputs": [
                 {
                     "variable": "az",
-                    "name": "Enter Subnet ID: ",
+                    "name": "Subnet ID",
                     "type": "",
                     "default": ""
                 },
                 {
                     "variable": "size",
-                    "name": "Enter size: ",
+                    "name": "Size",
                     "type": "",
                     "default": 1
                 },
                 {
                     "variable": "vt",
-                    "name": "Enter Volume type: ",
+                    "name": "Volume type",
                     "type": "",
                     "default": "gp2"
                 },
                 {
                     "variable": "name",
-                    "name": "Enter name of volume: ",
+                    "name": "Volume name",
                     "type": "",
                     "default": ""
                 }
@@ -40,37 +40,37 @@
             "inputs": [
                 {
                     "variable": "az",
-                    "name": "Enter Subnet ID: ",
+                    "name": "Subnet ID",
                     "type": "",
                     "default": ""
                 },
                 {
                     "variable": "size",
-                    "name": "Enter size: ",
+                    "name": "Size",
                     "type": "",
                     "default": 1
                 },
                 {
                     "variable": "vt",
-                    "name": "Enter Volume type: ",
+                    "name": "Volume type",
                     "type": "",
                     "default": "gp2"
                 },
                 {
                     "variable": "name",
-                    "name": "Enter name of volume: ",
+                    "name": "Volume name",
                     "type": "",
                     "default": ""
                 },
                 {
                     "variable": "device_name",
-                    "name": "Enter the device name: ",
+                    "name": "Device name",
                     "type": "",
                     "default": "/dev/sdf"
                 },
                 {
                     "variable": "instance_id",
-                    "name": "Enter Instance ID: ",
+                    "name": "Instance ID",
                     "type": "",
                     "default": ""
                 }
@@ -82,19 +82,19 @@
             "inputs": [
                 {
                     "variable": "vol_id",
-                    "name": "Enter the Volume ID: ",
+                    "name": "Volume ID",
                     "type": "",
                     "default": ""
                 },
                 {
                     "variable": "device_name",
-                    "name": "Enter the device name: ",
+                    "name": "Device name",
                     "type": "",
                     "default": "/dev/sdf"
                 },
                 {
                     "variable": "instance_id",
-                    "name": "Enter Instance ID: ",
+                    "name": "Instance ID",
                     "type": "",
                     "default": ""
                 }
@@ -106,7 +106,7 @@
             "inputs": [
                 {
                     "variable": "vol_id",
-                    "name": "Enter the Volume ID: ",
+                    "name": "Volume ID",
                     "type": "",
                     "default": ""
                 }
@@ -123,7 +123,7 @@
             "inputs": [
                 {
                     "variable": "vol_id",
-                    "name": "Enter the Volume ID: ",
+                    "name": "Volume ID",
                     "type": "",
                     "default": ""
                 }
@@ -135,7 +135,7 @@
             "inputs": [
                 {
                     "variable": "vol_id",
-                    "name": "Enter the Volume ID: ",
+                    "name": "Volume ID",
                     "type": "",
                     "default": ""
                 }

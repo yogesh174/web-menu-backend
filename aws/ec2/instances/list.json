@@ -10,43 +10,43 @@
             "inputs": [
                 {
                     "variable": "subnet",
-                    "name": "Enter Subnet ID: ",
+                    "name": "Subnet ID",
                     "type": "",
                     "default": ""
                 },
                 {
                     "variable": "name",
-                    "name": "Enter Name: ",
+                    "name": "Name",
                     "type": "",
                     "default": "auto"
                 },
                 {
                     "variable": "ami",
-                    "name": "Enter AMI ID: ",
+                    "name": "AMI ID",
                     "type": "",
                     "default": "ami-098f16afa9edf40be"
                 },
                 {
                     "variable": "instance_type",
-                    "name": "Enter Instance Type: ",
+                    "name": "Instance Type",
                     "type": "",
                     "default": "t2.micro"
                 },
                 {
                     "variable": "keypair",
-                    "name": "Enter key pair name: ",
+                    "name": "keypair name",
                     "type": "",
                     "default": "None"
                 },
                 {
                     "variable": "sg_id",
-                    "name": "Enter Security Group ID: ",
+                    "name": "Security Group ID",
                     "type": "",
                     "default": ""
                 },
                 {
                     "variable": "count",
-                    "name": "Enter the number of instances: ",
+                    "name": "Number of instances",
                     "type": "",
                     "default": 1
                 }
@@ -63,7 +63,7 @@
             "inputs": [
                 {
                     "variable": "instance_id",
-                    "name": "Enter the instance id: ",
+                    "name": "Instance id",
                     "type": "",
                     "default": ""
                 }
@@ -75,7 +75,7 @@
             "inputs": [
                 {
                     "variable": "instance_id",
-                    "name": "Enter the instance id: ",
+                    "name": "Instance id",
                     "type": "",
                     "default": ""
                 }
@@ -87,7 +87,7 @@
             "inputs": [
                 {
                     "variable": "instance_id",
-                    "name": "Enter the instance id: ",
+                    "name": "Instance id",
                     "type": "",
                     "default": ""
                 }
@@ -99,7 +99,7 @@
             "inputs": [
                 {
                     "variable": "instance_id",
-                    "name": "Enter the instance id: ",
+                    "name": "Instance id",
                     "type": "",
                     "default": ""
                 }

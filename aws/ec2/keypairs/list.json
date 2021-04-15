@@ -10,7 +10,7 @@
             "inputs": [
                 {
                     "variable": "keypair_name",
-                    "name": "Enter the name of Keypair :",
+                    "name": "Keypair name",
                     "type": "",
                     "default": ""
                 }
@@ -22,7 +22,7 @@
             "inputs": [
                 {
                     "variable": "keypair_name",
-                    "name": "Enter the name of Keypair :",
+                    "name": "Keypair name",
                     "type": "",
                     "default": ""
                 }
