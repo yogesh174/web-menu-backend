@@ -16,7 +16,7 @@ option = form.get("option")
 
 if option == "create a directory" :
     name = form["name"].strip()
-    mkdir(name)
+    print(mkdir(name))
 
 elif option == "display working directory" :
     pwd = pwd()
@@ -37,15 +37,11 @@ elif option == "display calender" :
 elif option == "create alias" :
     name = form["name"].strip()
     cmd = form["cmd"].strip()
-    alias(name,cmd)
-    
+    print(alias(name,cmd))
+
 elif option == "install pkg" :
     name = form["name"].strip()
-    yum(name)
-
-elif option == "ping an address" :
-    addr = form["addr"].strip()
-    ping(addr)
+    print(yum(name))
 
 elif option == "display the info of current user" :
     whoami = whoami()

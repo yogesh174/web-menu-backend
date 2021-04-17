@@ -21,9 +21,9 @@ def remove_vg(vg_name):
     op = subprocess.getoutput("sudo vgremove {}".format(vg_name))
     return op
 
-def remove_lv(lv_path):
-    unmount_lv(lv_path)
-    op = os.system("lvremove {}".format(lv_path))
+def remove_lv(path, lv_path):
+    unmount_lv(path)
+    op = subprocess.getoutput("sudo echo y | sudo lvremove {}".format(lv_path))
     return op
 
 
@@ -45,7 +45,7 @@ def extend_vg(vg_name, pv_name):
     return op
 
 def create_lv(size, lv_name, vg_name):
-    op = os.system("lvcreate --size {} --name {} {}".format(size, lv_name, vg_name))
+    op = subprocess.getoutput("sudo lvcreate --size {} --name {} {}".format(size, lv_name, vg_name))
     return op
 
 def list_all_lvs():
@@ -67,8 +67,8 @@ def mount_lv(lv_path, mount_path):
     op = subprocess.getoutput("sudo mount {} {}".format(lv_path, mount_path))
     return op
 
-def unmount_lv(lv_path):
-    op = subprocess.getoutput("sudo umount {}".format(lv_path))
+def unmount_lv(path):
+    op = subprocess.getoutput("sudo umount {}".format(path))
     return op
 
 # TODO: Give a choice for dynamic units instead of only GBs 
@@ -79,11 +79,12 @@ def extend_lv(size, lv_path):
     return op
 
 def reduce_lv_and_format(new_size, lv_path, mount_path):
-    os.system("umount {}".format(lv_path))
-    os.system("e2fsck -f {}".format(lv_path))
-    os.system("resize2fs {} {}".format(lv_path, new_size))
-    os.system("lvreduce --size {} {}".format(new_size, lv_path))
-    os.system("mount {} {}".format(lv_path, mount_path))
+    subprocess.getoutput("sudo umount {}".format(mount_path))
+    subprocess.getoutput("sudo echo y | sudo e2fsck -f {}".format(lv_path))
+    subprocess.getoutput("sudo echo y | sudo resize2fs {} {}".format(lv_path, new_size))
+    subprocess.getoutput("sudo echo y | sudo lvreduce --size {} {}".format(new_size, lv_path))
+    subprocess.getoutput("fsck.ext4 {}".format(lv_path))
+    subprocess.getoutput("sudo mount {} {}".format(lv_path, mount_path))
     return "Reduced LV to {}".format(new_size)
 
 # Displays disk information for all the file systems
@@ -105,5 +106,5 @@ def change_color(x):
     os.system(cmd)
 
 def mkdir(name):
-    a = os.system("mkdir {}".format(name))
+    a = subprocess.getoutput("sudo mkdir {}".format(name))
     return a

@@ -10,8 +10,8 @@ from subprocess import check_call
 from prettytable import PrettyTable
 
 # TODO: Ask user for creds
-ec2_resource = boto3.resource('ec2', region_name = 'us-east-1')
-ec2_client = boto3.client('ec2', region_name = 'us-east-1')
+ec2_resource = boto3.resource('ec2', region_name = 'us-east-2')
+ec2_client = boto3.client('ec2', region_name = 'us-east-2')
 
 def list_sgs():
     print('All Security Groups:')
@@ -118,7 +118,6 @@ def terminate_instance(instance_id):
 
 def list_instances():
     response = ec2_client.describe_instances()
-
     t = PrettyTable(['InstanceId', 'InstanceType', 'State', 'SubnetId', "AZ", 'SecurityGroups', 'Tags', 'KeyPair'])
 
 

@@ -17,13 +17,13 @@ option = form.get("option")
 
 if option == "create a bucket":
     bucket_name = form["bucket_name"].strip()
-    region = form["bucket_name"].strip()
+    region = form["region"].strip()
     response = create_bucket(bucket_name, region)
     if not response[0]:
-        print("Bucket not created")
+        print("Bucket not created!!")
         print(response[1])
     else :
-        print("Bucket created ...")
+        print("Bucket created!")
 
 elif option == "delete bucket":
     bucket_name = form["bucket_name"].strip()
@@ -48,9 +48,7 @@ elif option == "upload files to bucket":
         public = True
     elif public.lower() == "n":
         public = False
-    print("File uploading ...")
     response = upload_file(path, bucket_name, obj_name, public)
-    print(response)
     
     if not response[0]:
         print("File not uploaded")
@@ -66,15 +64,18 @@ elif option == "download files from bucket":
     download_file(bucket_name, obj_name, path)
     
 elif option == "list files in bucket":
-    bucket_name = input("Enter the name of bucket : ").strip()
+    bucket_name = form["bucket_name"].strip()
     response = list_files(bucket_name)
-    for key in response['Contents']:
-        print(key['Key'])
+    # print(response)
+    if response.get('Contents'):
+        for key in response['Contents']:
+            print(key['Key'])
+    else:
+        print("Bucket is empty!")
 
 elif option == "delete file in bucket":
     bucket_name = form["bucket_name"].strip()
     obj_name = form["obj_name"].strip()
-    print("Deleting object ...")
     response = delete_file(bucket_name, obj_name)
     print("Object deleted")
 

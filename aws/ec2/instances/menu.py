@@ -31,6 +31,12 @@ if option == "launch Instances":
     sg_id = sg_id.strip()
     
     response = create_instance(ami, instance_type, count, subnet, sg_id, keypair, name)
+    if response:
+        print("Instance Launched!")
+        print(response)
+    else:
+        print("Unable to launch an instance!")
+        print("Please check the details entered!!")
 
 elif option == "list Instances":
     list_instances()

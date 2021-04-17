@@ -4,6 +4,7 @@ import subprocess as sp
 import json, sys
 import cgi
 import os
+from prettytable import PrettyTable
 
 print("Content-type: text/html")
 print("Access-Control-Allow-Origin: *")
@@ -17,8 +18,11 @@ option = form.get("option")
 
 if option == "create a keypair":
     keypair_name = form["keypair_name"].strip()
-    print("Creating KeyPair ...")
     response = create_keypair(keypair_name)
+    print("Created KeyPair!")
+    print("Key:\n")
+    print(response['KeyMaterial'])
+    
     # path = input("Enter the path to save Keypair: ").strip()
     # print("Saving KeyPair ...")
     # with open(os.path.join(path,'{}.pem'.format(response['KeyName'])), 'w') as file:
@@ -27,9 +31,7 @@ if option == "create a keypair":
 
 elif option == "delete a keypair":
     keypair_name = form["keypair_name"].strip()
-    print("Deleting KeyPair ...")
     response = delete_keypair(keypair_name)                        
-    # print(response)
     print("Deleted KeyPair")
 
 elif option == "list keypairs":

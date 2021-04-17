@@ -62,7 +62,7 @@
                 {
                     "variable": "vg_name",
                     "name": "VG name",
-                    "type": "auto",
+                    "type": "",
                     "default": ""
                 }
             ]
@@ -134,7 +134,7 @@
                     "variable": "size",
                     "name": "Size of LV",
                     "type": "",
-                    "default": ""
+                    "default": "500M"
                 }
             ]
         },
@@ -251,7 +251,7 @@
                 },
                 {
                     "variable": "mount_path",
-                    "name": "New mount point",
+                    "name": "Current/New mount path",
                     "type": "",
                     "default": ""
                 }
@@ -279,6 +279,12 @@
             "key": "remove an LV",
             "group": "Logical Volumes",
             "inputs": [
+                {
+                    "variable": "path",
+                    "name": "Mount Path",
+                    "type": "",
+                    "default": ""
+                },
                 {
                     "variable": "lv_name",
                     "name": "LV name",

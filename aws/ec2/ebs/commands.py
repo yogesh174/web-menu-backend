@@ -8,8 +8,8 @@ import pandas as pd
 import time
 from subprocess import check_call
 
-ec2_resource = boto3.resource('ec2')
-ec2_client = boto3.client('ec2')
+ec2_resource = boto3.resource('ec2', region_name = 'us-east-2')
+ec2_client = boto3.client('ec2', region_name = 'us-east-2')
 
 def list_azs():
     response = ec2_client.describe_availability_zones()
@@ -59,9 +59,11 @@ def delete_volume(vol_id):
     return response
 
 def get_volume_details(vol_id):
-
     response = ec2_client.describe_volumes(VolumeIds=[vol_id,],)
     return response
+
+def detach_volume(vol_id):
+    return ec2_client.detach_volume(VolumeId=vol_id)
 
 def create_and_attach_volume(az, size, instance_id, device_name="/dev/sdf", vt='gp2', name='auto', ssid=""):
     args = {

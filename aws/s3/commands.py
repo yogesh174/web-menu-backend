@@ -13,7 +13,6 @@ from botocore.exceptions import ClientError
 
 
 def create_bucket(bucket_name, region=None):
-
     try:
         if region is None:
             s3_client = boto3.client('s3')
@@ -41,7 +40,6 @@ def upload_file(file_name, bucket, object_name, public):
     args = {}
     if public:
         args["ExtraArgs"] = {'ACL': 'public-read'}
-        
     try:
         response = s3_client.upload_file(file_name, bucket, object_name, **args)
         return True, response

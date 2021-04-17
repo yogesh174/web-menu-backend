@@ -12,19 +12,19 @@
                     "variable": "subnet",
                     "name": "Subnet ID",
                     "type": "",
-                    "default": ""
+                    "default": "subnet-fbf33f90"
                 },
                 {
                     "variable": "name",
                     "name": "Name",
                     "type": "",
-                    "default": "auto"
+                    "default": ""
                 },
                 {
                     "variable": "ami",
                     "name": "AMI ID",
                     "type": "",
-                    "default": "ami-098f16afa9edf40be"
+                    "default": "ami-05d72852800cbf29e"
                 },
                 {
                     "variable": "instance_type",
@@ -42,7 +42,7 @@
                     "variable": "sg_id",
                     "name": "Security Group ID",
                     "type": "",
-                    "default": ""
+                    "default": "sg-05c3a93cc0e64f1c2"
                 },
                 {
                     "variable": "count",

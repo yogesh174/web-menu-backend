@@ -70,18 +70,6 @@
             ]
         },
         {
-            "key": "ping an address",
-            "group": "Common Commands",
-            "inputs": [
-                {
-                    "variable": "addr",
-                    "name": "IP address",
-                    "type": "",
-                    "default": ""
-                }
-            ]
-        },
-        {
             "key": "display the info of current user",
             "group": "Sys Info",
             "inputs": []

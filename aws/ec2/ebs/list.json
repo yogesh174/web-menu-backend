@@ -10,7 +10,7 @@
             "inputs": [
                 {
                     "variable": "az",
-                    "name": "Subnet ID",
+                    "name": "Availability Zone",
                     "type": "",
                     "default": ""
                 },
@@ -40,7 +40,7 @@
             "inputs": [
                 {
                     "variable": "az",
-                    "name": "Subnet ID",
+                    "name": "Availability Zone",
                     "type": "",
                     "default": ""
                 },

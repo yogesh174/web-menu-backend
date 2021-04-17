@@ -21,7 +21,7 @@ if option == "create a PV" :
     op = create_pv(device_name)
     print(op)
     
-elif option == "list all the PVs" :
+elif option == "list PVs" :
     op = list_all_pvs()
     print(op)
 
@@ -41,10 +41,12 @@ elif option == "remove a VG" :
     print(op)
 
 elif option == "remove an LV" :
+    path = form["path"]
     lv_name = form["lv_name"]
     vg_name = form["vg_name"]
     lv_path = f"/dev/mapper/{vg_name}-{lv_name}"
-    op = remove_lv(lv_path)
+    op = remove_lv(path, lv_path)
+    print(op)
 
 elif option == "create a VG" :    
     pv_name = form["pv_name"]
@@ -106,7 +108,7 @@ elif option == "extend an LV" :
     size = form["size"]
     lv_path = f"/dev/mapper/{vg_name}-{lv_name}"
     op = extend_lv(size, lv_path)
-    # print(op)
+    print(op)
 
 elif option == "reduce an LV" :
     lv_name = form["lv_name"]
@@ -127,10 +129,11 @@ elif option == "unmount an LV":
 
 elif option == "display the disk space" :
     op = disk_space()
-    # print(op)
+    print(op)
 
 elif option == "create a directory":
     dir_path = form["dir_path"]
     op = mkdir(dir_path)
+    print("Created directory!")
 else :
     print("Option not supported")

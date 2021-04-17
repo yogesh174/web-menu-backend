@@ -4,6 +4,8 @@ import subprocess as sp
 import json, sys
 import cgi
 import os
+from botocore.exceptions import ClientError
+from prettytable import PrettyTable
 
 print("Content-type: text/html")
 print("Access-Control-Allow-Origin: *")
@@ -17,7 +19,7 @@ option = form.get("option")
 
 if option == "create volume":
     az = form['az'].strip()
-    size = int(form['size'].strip())
+    size = int(str(form['size']).strip())
     vt = form['vt'].strip()
     name = form['name'].strip()
     
@@ -26,7 +28,7 @@ if option == "create volume":
 
 elif option == "create and attach volume":
     az = form['az'].strip()
-    size = int(form['size'].strip())
+    size = int(str(form['size']).strip())
     vt = form['vt'].strip()
     name = form['name'].strip()
     device_name = form["device_name"].strip()
@@ -49,6 +51,7 @@ elif option == "attach volume":
 elif option == "detach volume":
     vol_id = form["vol_id"].strip()
     response = detach_volume(vol_id)
+    print(response)
 
 elif option == "list volumes":
     response = list_volumes()
@@ -65,7 +68,8 @@ elif option == "list volumes":
 elif option == "delete volume":
     vol_id = form["vol_id"].strip()
     try:
-        delete_volume(vol_id)
+        res = delete_volume(vol_id)
+        print(res)
     except ClientError as e:
         print("Make sure that volume is detached")
         print(e)
